@@ -1,0 +1,215 @@
+.portfolio{
+    position: relative;
+}
+.portfolio .box{
+    border-radius: 10px;
+    position: relative;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.portfolio .box:hover{
+    background: none;
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+}
+.portfolio .img{
+    height: 300px;
+    overflow: hidden;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+.portfolio img{
+    width: 100%;
+    border-radius: 10px;
+    transition: 0.5s;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+.portfolio .box .img:hover img{
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+.portfolio .category{
+    margin: 20px 0px 30px 0px;
+    text-transform: uppercase;
+}
+.portfolio .category span{
+    color: #ff014f;
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+.portfolio .arrow{
+    position: absolute;
+    right: 30px;
+    bottom: 10%;
+    color: #ff014f;
+    opacity: 0;
+    transition: 0.5s;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+.portfolio .title:hover .arrow{
+    opacity: 1;
+}
+.portfolio h2{
+    font-size: 18px;
+    transition: 0.5s;
+    padding-bottom: 30px;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+.portfolio .box:hover h2{
+    color: #ff014f;
+}
+.portfolio .box:hover{
+    color: black;
+}
+.portfolio label i{
+    margin-right: 10px;
+}
+
+ /* POP UP MODAL START */
+ .btn-modal{
+    padding: 10px 20px;
+    display: block;
+    margin: 100px auto 0;
+    font-size: 18px;
+ }
+ .modal,.overlay{
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    position: fixed;
+    z-index: 9999;
+ }
+ .overlay{
+    background-color: #ecf0f3;
+ }
+ .modal-content{
+    position: absolute;
+    top: 12%;
+    left: 8%;
+    line-height: 1.4;
+    background: #f0f3f5;
+    padding: 14px 28px;
+    min-width: 60%;
+    max-width: 85%;
+    z-index: 9999;
+    padding: 50px;
+    box-shadow: 4px 4px 8px #cbcbcb, 4px -4px 8px #ffffff;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.modal-text{
+    padding: 0px 100px 0px 50px;
+}
+.modal-text h1{
+    margin: 20px 0px 20px 0px;
+    font-size: 30px;
+}
+.modal-text p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    line-height: 25px;
+}
+.modal-text button{
+    margin-right: 20px;
+    color: #ff014f;
+}
+.modal-text button i {
+    margin-left: 10px;
+}
+.modal-text button.close-modal{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-size: 20px;
+    padding: 0;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.modal-text button.close-modal i{
+    margin: 0;
+}
+@media screen and (max-width:768px) {
+    .modal , .overlay{
+        overflow: scroll;
+    }
+    .modal .modal-img{
+        margin: 50px 0px 50px 0px;
+    }
+    .modal-content{
+        flex-direction: column-reverse;
+    }
+    .modal .right , .modal .left {
+        padding: 0;
+    }
+}
+@media screen and (max-width:475px) {
+    .modal-content {
+            flex-direction: column-reverse;
+        }
+    .modal .modal-img {
+            margin: 50px 0px 50px 0px;
+     }
+         .modal-text h1 {
+             margin: 20px 0px 20px 0px;
+             font-size: 20px;
+             text-align: center;
+             color: #ff014f;
+         }
+    
+         .modal-text p {
+             font-size: 16px;
+             text-align: left;
+         }
+        .modal-text button.close-modal i {
+             margin: 10px;
+        }
+     .modal-text button{
+    margin-right: 10px;
+    color: #ff014f;
+    }
+    .modal-text button i {
+    margin-left: 5px;
+    }
+}

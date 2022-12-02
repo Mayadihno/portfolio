@@ -1,0 +1,169 @@
+.client h2{
+    margin: 15px 0px 0px 0px;
+}
+.client .left {
+    width: 35%;
+    padding: 35px;
+    margin: 20px;
+}
+.client .right{
+    width: 65%;
+    padding: 0px 0px 0px 50px;
+    margin: 0px 20px 0px 0px;
+}
+.client .quote i {
+    font-size: 150px;
+    opacity: 0.1;
+}
+.client .content{
+    padding: 50px;
+}
+.client .content h1{
+    font-weight: 500;
+}
+.client .content h3{
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+.client .slide-btn{
+    position: absolute; 
+    top: 30px;
+    right: 20px;
+    
+}
+.client .slide-btn .prev-btn{
+    margin-right: 30px;
+
+}
+.client .details span{
+    color: #ff014f;
+}
+
+/* Client slider */
+
+.client .slider{
+    max-width: 85%;
+    position: relative;
+    margin: auto;
+    height: 500px;
+    display: flex;
+    overflow: hidden;
+}
+article {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+}
+ .activeSlider{
+    opacity: 1;
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+}
+ .lastSlider{
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+}
+.nextSlider{
+    transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+}
+article .img img{
+    width:200px ;
+    height: 200px;
+    vertical-align: middle;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+@media screen and (max-width:768px) {
+    article {
+        flex-direction: column;
+        padding: 20px;
+    }
+    .client .left {
+        width: 100%;
+        display: flex;
+        margin: 0;
+        margin-top: 15%;
+    }
+    .client .left img{
+        width: 190px;
+        margin-right: 20px;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+    }
+    .client .right{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .client .slider{
+        height: 70vh;
+        min-width: 90%;
+    }
+    .client .quote i{
+        display: none;
+    }
+}
+@media screen and (max-width:475px) {
+    .client .right {
+        width: 50%;
+        margin: 0;
+        padding: 0;
+     }
+    article {
+        flex-direction: column;
+        padding: 20px;
+     }
+    .client .left {
+        width: 70%;
+        display: flex;
+        margin: 0;
+        margin-top: 15%;
+    }
+    .client .left img {
+        width: 120px;
+        margin-right: 10px;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+    }
+    .client .details{
+        margin-left: 40px;
+    }
+    .client .slider {
+         height: 50vh;
+         min-width: 70%;
+    }
+    .client .content{
+        display: none;
+    }
+    .client .slide-btn{
+        margin-left: 20px;
+    }
+}

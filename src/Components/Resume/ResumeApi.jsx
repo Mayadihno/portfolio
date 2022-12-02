@@ -1,0 +1,51 @@
+const data = [
+  {
+    id: 1,
+    category: "Education",
+    school: "Federal University Of Technology Akure (2018-Present)",
+    course: "Industrial Chemistry",
+    desc: "Education should be very Intellectual",
+    rate: "4.31 / 5.0",
+  },
+  {
+    id: 2,
+    category: "Education",
+    school: "KLX Tech hub (2019-2020)",
+    course: "Web Development",
+    desc: "There is more to programming than web development.",
+    rate: "4.43 / 5.0",
+  },
+  {
+    id: 3,
+    category: "Education",
+    school: "Baptist Secondary School Ibadan, Oyo State, Nigeria. (2010-2016)",
+    course: "Science And Technology",
+    desc: "Secondary School education is very esstential for prosperous Future of Man kind",
+    rate: "4.83 / 5.0",
+  },
+  {
+    id: 4,
+    category: "Experience",
+    school: "Work with InuuVerk. (2022-Present)",
+    course: "E-learning Platform",
+    desc: "Creating a Platform where any Individual can come on to Learn Any Programming Language",
+    rate: "4.83 / 5.0",
+  },
+  {
+    id: 5,
+    category: "Experience",
+    school: "Work with DragNet_Nig. (2022-Present)",
+    course: "E-learning Platform",
+    desc: "Creating a Platform where any Individual can come on to Learn Any Programming Language",
+    rate: "4.83 / 5.0",
+  },
+  {
+    id: 6,
+    category: "Experience",
+    school: "Work with KLX Tech Company. (2020-2021)",
+    course: "Website Development",
+    desc: "Secondary School education is very esstential for prosperous Future of Man kind",
+    rate: "4.83 / 5.0",
+  },
+];
+export default data;

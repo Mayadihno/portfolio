@@ -1,0 +1,15 @@
+footer .container hr{
+   margin-bottom: 15px;
+   border: 1px solid #ff1404;
+}
+footer .container p {
+    font-size: 20px;
+    margin-top: 15px;
+    color: #ff1404;
+}
+
+@media screen and (max-width:475px) {
+    footer{
+        margin-top: 20px;
+    }
+}
